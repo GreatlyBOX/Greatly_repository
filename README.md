@@ -1,5 +1,8 @@
 # Spring Boot 学习笔记
 
+#基础篇
+
+
 
 1.SpringBoot之HelloWord
 
@@ -11,23 +14,28 @@
 
 5.SpringBoot之配置文件详解
 
-6.SpringBoot之添加https支持
+6.SpringBoot之热部署
 
-7.SpringBoot之集成Mybatis（基于注解）
+7.SpringBoot之添加https支持
 
-8.SpringBoot之集成Mybatis动态SQL（基于注解）
+8.SpringBoot之集成Mybatis（基于注解）
 
-
-
-
-
-提升篇
+9.SpringBoot之集成Mybatis动态SQL（基于注解）
 
 
 
-9.SpringBoot之集成Rides
 
-10.SpringBoot之集成Shiro
+
+#提升篇
+
+
+
+10.SpringBoot之集成Rides
+
+11.SpringBoot之集成Shiro
+
+
+
 
 
 #知乎地址
@@ -41,4 +49,3 @@ Greatly_BOX@163.com
 
 
 欢迎大家来信，一起学习进步
-
