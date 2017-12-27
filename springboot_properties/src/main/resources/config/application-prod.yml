@@ -1,0 +1,22 @@
+
+#server
+server:
+  port: 8081
+  session-timeout: 30
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+
+#自定义属性
+app:
+  property:
+      maxSize: 77
+      minSize: 40
+#获取随机字符串
+      uuid: ${random.value}
+#获取随机字符串：${random.value}
+#获取随机int：${random.int}
+#获取10以内的随机数：${random.int(10)}
+#获取10-20的随机数：${random.int[10,20]}
+#获取随机long：${random.long}
+#获取随机uuid：${random.uuid}
+#引用测试的配置文件

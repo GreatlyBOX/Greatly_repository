@@ -1,0 +1,9 @@
+#指定环境配置文件
+# dev 开发 test 测试  prod生产
+#spring:
+#  profiles:
+#       active: dev
+#引用生产的配置文件
+  spring:
+      profiles:
+              active: prod
