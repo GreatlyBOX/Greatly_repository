@@ -1,9 +1,6 @@
 # Spring Boot 学习笔记
 
 #基础篇
-
-
-
 1.SpringBoot之HelloWord
 
 2.SpringBoot之改变端口号与MAVEN命令使用
@@ -22,6 +19,12 @@
 
 9.SpringBoot之集成Mybatis动态SQL（基于注解）
 
+10.Spring Boot之集成Mybatis之分页组件
+
+11.Spring Boot之集成JPA
+
+12.Spring Boot之开启JSP支持
+
 
 
 
@@ -30,9 +33,19 @@
 
 
 
-10.SpringBoot之集成Rides
+13.SpringBoot之集成Ehcache
 
-11.SpringBoot之集成Shiro
+14.SpringBoot之集成Rides
+
+15.SpringBoot之集成Shiro
+
+
+
+#微服务篇
+
+
+
+16.微服务理论篇
 
 
 
