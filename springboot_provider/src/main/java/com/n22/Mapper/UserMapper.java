@@ -3,6 +3,9 @@ package com.n22.Mapper;
 import com.n22.Model.User;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.jdbc.SQL;
+
+
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,7 +22,8 @@ public interface UserMapper {
     User findUserById(User user);
     @SelectProvider(type = UserDaoProvider.class, method = "findByUserName")
     User findUserByName(Map<String, Object> map);
-
+    @Select("select "+returnSql+" from user")
+    List<User> getAll();
     class UserDaoProvider {
         /**
          * 多条件查询可以建立查询model

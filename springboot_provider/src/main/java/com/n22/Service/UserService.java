@@ -12,9 +12,10 @@ import java.util.List;
  * @创建时间 2018/1/2
  */
 
-public interface UserService {
+ public interface UserService {
  User findUserById(User user);
  User findUserByName(User user);
+ List<User> findUserByName(int pageSize,int pageNum);
 
 
 }

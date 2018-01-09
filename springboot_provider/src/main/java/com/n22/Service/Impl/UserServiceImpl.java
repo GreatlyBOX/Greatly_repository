@@ -1,5 +1,6 @@
 package com.n22.Service.Impl;
 
+import com.github.pagehelper.PageHelper;
 import com.n22.Mapper.UserMapper;
 import com.n22.Model.User;
 import com.n22.Service.UserService;
@@ -20,6 +21,12 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
     @Autowired(required = false)
     UserMapper userMapper;
+
+    @Override
+    public List<User> findUserByName(int pageSize, int pageNum) {
+        PageHelper.startPage(pageNum,pageSize);
+        return userMapper.getAll();
+    }
 
     @Override
     public User findUserById(User user) {

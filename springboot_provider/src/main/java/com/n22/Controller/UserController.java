@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 /**
  * @author 启哲
@@ -34,6 +36,10 @@ public class UserController {
         User user=userService.findUserByName(user1);
         return user;
 
+    }
+    @RequestMapping("selecPageUser")
+    public List<User> selecPageUser(int pageSize,int pageNum){
+        return userService.findUserByName(pageNum,pageSize);
     }
 
 }
