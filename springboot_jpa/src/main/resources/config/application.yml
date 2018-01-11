@@ -1,9 +1,9 @@
 
 spring:
     datasource:
-      url: jdbc:mysql://10.8.200.179:3306/test?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
-      username: jzyxnewuser
-      password: jzyxmysql123!
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+      username: root
+      password: root
       driver-class-name: com.mysql.jdbc.Driver
       max-active: 20
       max-idle: 8
