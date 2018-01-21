@@ -1,0 +1,33 @@
+
+spring:
+    datasource:
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      max-active: 20
+      max-idle: 8
+      min-idle: 8
+      initial-size: 10
+    jpa:
+      database: mysql
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        naming:
+          strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+#server
+server:
+  port: 8088
+  session-timeout: 30
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+  context-path: /jpa
+
+
+
+
+
