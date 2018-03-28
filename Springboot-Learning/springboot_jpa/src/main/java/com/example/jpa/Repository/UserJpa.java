@@ -3,16 +3,12 @@ package com.example.jpa.Repository;
 
 
 import com.example.jpa.Model.User;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * @author 启哲

@@ -6,7 +6,6 @@ import com.example.jpa.Model.User;
 import com.example.jpa.Repository.UserJpa;
 import com.example.jpa.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
