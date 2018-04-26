@@ -1,7 +1,8 @@
 package com.n22.Controller;
 
-import com.n22.Mapper.UserMapper;
+
 import com.n22.Model.User;
+import com.n22.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,16 +18,16 @@ import java.util.List;
 @RestController
 public class UserController {
     @Autowired(required = false)
-    UserMapper userMapper;
+    UserService userService;
     @RequestMapping("selectUsers")
     public List getUsers(){
-        List users=userMapper.getAll();
+        List users=userService.getAll();
         return users;
 
     }
     @RequestMapping("selectUser")
     public User getUserOne(String id){
-        User user=userMapper.getUserById(id);
+        User user=userService.getUserById(id);
         return user;
 
     }
