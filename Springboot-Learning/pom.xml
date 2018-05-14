@@ -20,6 +20,7 @@
         <module>springboot_mybatis</module>
         <module>springboot_prot</module>
         <module>springboot_properties</module>
+        <module>springboot_redis</module>
     </modules>
 
 

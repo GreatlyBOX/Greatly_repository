@@ -36,7 +36,7 @@
 
 13.SpringBoot之集成Ehcache
 
-14.SpringBoot之集成Rides
+14.SpringBoot之集成Redis
 
 15.SpringBoot之集成Shiro
 
