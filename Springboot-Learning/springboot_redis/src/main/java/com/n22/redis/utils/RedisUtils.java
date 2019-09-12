@@ -49,7 +49,7 @@ public class RedisUtils {
         boolean result = false;
         try {
             ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-            operations.set(key, value);
+            operations.set(key,value);
             result = true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,7 +66,7 @@ public class RedisUtils {
         boolean result = false;
         try {
             ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-            operations.set(key, value);
+            operations.set(key,value);
             redisTemplate.expire(key, expireTime, TimeUnit.SECONDS);
             result = true;
         } catch (Exception e) {
