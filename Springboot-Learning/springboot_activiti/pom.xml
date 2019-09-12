@@ -25,7 +25,7 @@
 		<activiti.version>5.22.0</activiti.version>
 		<commons-codec.version>1.9</commons-codec.version>
 		<!-- 阿里fastjson版本 -->
-		<fastjson.version>1.1.40</fastjson.version>
+		<fastjson.version>1.2.31</fastjson.version>
 	</properties>
 
 	<dependencies>
