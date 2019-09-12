@@ -1,0 +1,8 @@
+server:
+  port: 8889
+spring:
+  influx:
+    url: http://127.0.0.1:8086
+    password: admin
+    user: admin
+    database: testdb
