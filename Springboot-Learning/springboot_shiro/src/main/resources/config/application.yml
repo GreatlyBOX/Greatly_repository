@@ -1,0 +1,58 @@
+
+server:
+  port: 8083
+  context-path: /springboot_shiro
+spring:
+  datasource:
+       url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+       username: root
+       password: 123456
+       #schema: database/import.sql
+       #sql-script-encoding: utf-8
+       driverClassName: com.mysql.jdbc.Driver
+       max-active: 20
+       max-idle: 8
+       min-idle: 8
+       initial-size: 10
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
+  redis:
+    database: 0
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password: 12345
+    # 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+      # 连接超时时间（毫秒）
+    timeout: 0
+logging:
+  file: logs/domo-shiro.log
+  level:
+    root: info
+    org.springframework.test: info
+    org.springframework.cloud: info
+    org.springframework.cloud.sleuth: info
+    org.springframework.cloud.sleuth.log: info
+    org.springframework.cloud.sleuth.trace: info
+    org.springframework.cloud.sleuth.instrument.rxjava: info
