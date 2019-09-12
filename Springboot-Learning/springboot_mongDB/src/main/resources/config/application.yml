@@ -1,0 +1,12 @@
+server:
+  port: 8889
+spring:
+   data:
+     mongodb:
+       uri: mongodb://miao:123456@127.0.0.1:27017/test
+#       host: 127.0.0.1
+#       port: 27017
+#       database: test
+#       username: miao
+#       password: 123456
+#       authentication-database: admin
