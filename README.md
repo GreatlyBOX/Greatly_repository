@@ -1,7 +1,7 @@
 # Spring Boot 学习笔记
 
-#基础篇
-
+# 基础篇
+***
 1.SpringBoot之HelloWord
 
 2.SpringBoot之改变端口号与MAVEN命令使用
@@ -27,7 +27,7 @@
 12.Spring Boot之开启JSP支持
 
 
-
+***
 
 
 #提升篇
@@ -40,7 +40,25 @@
 
 15.SpringBoot之集成Shiro
 
+16.SpringBoot之使用mybatis-generator自动生成代码
 
+17.SpringBoot之使用lombok编码
+
+18.SpringBoot之初始化数据
+
+19.SpringBoot之使用POI开发Excel模板
+
+20.SpringBoot之修改ico和Banner
+
+21.SpringBoot之发送邮件与短信
+
+22.SpringBoot之集成Activiti工作流
+
+23.SpringBoot之集成sharding-jdbc分库分表
+
+
+
+***
 
 #微服务篇
 
