@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<title>用户选择</title>
+	<script src="../editor-app/plss.js" type="text/javascript"></script>
+	<script src="../editor-app/libs/jquery_1.11.0/jquery.min.js"></script>
+</head>
+<style>
+	table {
+		margin:auto;
+		width: 80%;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	table caption {
+		color: blue;
+		font: 34px consolas bold;
+	}
+
+	table th, table td {
+		border: 1px solid black;
+		text-align:center;
+	}
+
+	table th {
+		font: 20px consolas bold;
+		background-color: gray;
+	}
+
+	table tr:nth-child(n+2){
+		background-color: cyan;
+	}
+
+	table tr:nth-child(2n+2)  {
+		background-color: red;
+	}
+	.col-sm-4 button{
+      width: 10%;
+		height: 30px;
+		color: #2aabd2;
+	}
+	.col-sm-4 label{
+		color: #ac2020;
+	}
+	.col-sm-4 input{
+		width: 20%;
+		height: 30px;
+	}
+	body{
+		text-align: center;
+	}
+	.limit button{
+		width: 20px;
+		height: 30px;
+		padding: 3px;
+	}
+	.operation button{
+		width: 10%;
+		height: 30px;
+	}
+</style>
+<body class="bg-white">
+	<div class="wrapper wrapper-content">
+	<div class="row">
+		<div  class="col-sm-9 col-md-10 animated fadeInRight">
+			<!-- 搜索框-->
+		<div class="accordion-group">
+			<div id="collapseTwo" class="accordion-body">
+				<div class="accordion-inner">
+					    <div class="col-sm-4">
+					    	<label class="" title="姓名：">姓名：</label>
+					   		<input type="text" id="loginName" name="loginName" maxlength="100"  class=" form-control"/>
+							<button id="search" onclick="buttonQuery()"  title="查询"> 查询</button>
+							<button id="reset" onclick="buttonClear()"  title="重置"> 重置</button>
+					    </div>
+				</div>
+			</div>
+		</div><!-- 搜索框结束 -->
+
+			<table border="1" id="tb">
+				　　 <thead>
+			　　　　<tr>   <th></th>
+				　　　　　　<th>登录名</th>
+				          <th>姓名</th>
+				　　　　　　<th>区域</th>
+				　　　　　　<th>性别</th>
+				　　　　　　<th>手机号</th>
+			    </tr>
+			　　</thead>
+			</table>
+			<div id="limit">
+				<label id="conut"></label><span id="nexts"></span>
+			</div>
+	</div>
+	</div>
+	</div>
+    <div class="operation">
+		<button id="queding" onclick="queding()" title="确定">确定</button>
+		<button id="buttonOff" onclick="buttonOff()" title="关闭">关闭</button>
+	</div>
+</body>
+</html>

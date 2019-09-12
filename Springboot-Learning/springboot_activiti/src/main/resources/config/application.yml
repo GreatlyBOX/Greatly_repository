@@ -1,0 +1,14 @@
+server:
+  port: 8994
+
+
+spring:
+  application: #微服务名称
+    name: spring-boot-activiti
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/processcenter?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
