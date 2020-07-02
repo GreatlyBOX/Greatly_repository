@@ -23,6 +23,7 @@
         <module>springboot_redis</module>
         <module>springboot_influxDB</module>
         <module>springboot_mongDB</module>
+        <module>springboot_mqtt</module>
     </modules>
 
 
