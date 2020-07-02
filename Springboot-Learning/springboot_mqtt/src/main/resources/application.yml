@@ -1,0 +1,8 @@
+hospitalCode: xxx
+url: http://127.0.0.1:8090/ddd
+unitCode: xxxx
+mqAddress: tcp://127.0.0.1:1883
+clientId: clientId1
+commandTopic: commandtopic
+consumeClientId: consumeclientId1
+consumeTopic: consumetopic
