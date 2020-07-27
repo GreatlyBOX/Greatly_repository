@@ -24,6 +24,9 @@
         <module>springboot_influxDB</module>
         <module>springboot_mongDB</module>
         <module>springboot_mqtt</module>
+        <module>springboot_activiti</module>
+        <module>springboot_docker</module>
+        <module>springboot_shiro</module>
     </modules>
 
 
