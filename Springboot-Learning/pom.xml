@@ -27,6 +27,7 @@
         <module>springboot_activiti</module>
         <module>springboot_docker</module>
         <module>springboot_shiro</module>
+        <module>springboot_swagger</module>
     </modules>
 
 
